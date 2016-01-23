@@ -48,5 +48,43 @@ var airportCodes = [ "LGA": "La Guardia", "LHR": "Heathrow", "CDG": "Charles De 
 airportCodes["LGA"]
 
 airportCodes["SYD"] = "Sydney Airport"
+airportCodes
+
+airportCodes["LGA"] = "La Guardia International Airport"
+
+airportCodes.updateValue("Dublin Airport", forKey: "DUB")
+
+airportCodes["DXB"] = nil
+
+airportCodes.removeValueForKey("DUE")
+airportCodes
+
+
+//Indexing issues -- Optionals -- dictionary keys always return a optional
+
+let airportName = airportCodes["LGA"]
+airportName.dynamicType
+let orlandoAirport = airportCodes["MCO"]
+
+//code challenge
+
+// Enter your code below
+var iceCream = ["CC": "Chocolate Chip", "AP": "Apple Pie", "PB": "Peanut Butter"]
+iceCream.updateValue("Rocky Road", forKey: "RR")
+
+let applePie = iceCream["AP"]
+iceCream["CC"] = "Chocolate Chip Cookie Dough"
+
+
+
+
+
+
+
+
+
+
+
+
 
 
